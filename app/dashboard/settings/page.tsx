@@ -1,101 +1,12 @@
-// import prisma from "@/app/lib/db";
-// import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-// import { Input } from "@/components/ui/input";
-// import { Label } from "@/components/ui/label";
-// import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
-// import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
-// import React from "react";
-// async function getData(userId:string) {
-//   const data = await prisma.user.findUnique({
-//     where:{
-//       id:userId,
-//     },
-//     select:{
-//       name:true,
-//       email:true,
-//       colorScheme:true
-//     },
-//   })
-//   return data;  
-// }
-// const page = async() => {
-//   const {getUser} = getKindeServerSession();
-//   const user = await getUser();
-//   const data = await getData(user?.id as string); 
-//   return (
-//     <div className="grid items-start gap-6">
-//       <div className="flex items-center justify-between px-2">
-//         <div className="grid gap-1">
-//           <h1 className="text-3xl md:text-4xl"> Setting</h1>
-//           <p className="text-lg text-muted-foreground"> Your profie setting </p>
-//         </div>
-//       </div>
-//       <Card>
-//         <form>
-//           <CardHeader>
-//           <CardTitle>General Data</CardTitle>
-//            <CardDescription>Please provide general information about your self and dont forgat to save !</CardDescription>
-//           </CardHeader>
-//           <CardContent>
-//             <div className="space-y-2">
-//    <div className="space-y-1">
-//   <Label>Your Name</Label>
-//   <Input
-//   name="name"
-//   type="text"
-//   id="name"
-//   placeholder="Your name"
-//   defaultValue={data?.name ?? undefined}
-//   />
-//    </div>
-//    <div className="space-y-1">
-//   <Label>Your Email</Label>
-//   <Input  
-//   name="email"
-//   type="text"
-//   id="email"
-//   placeholder="Your Email"
-//   defaultValue={data?.email as string}
-//   disabled
-//   />
-//    </div>
-//    <div className="space-y-1">
-//     <Label>Color Scheme</Label>
-// <Select name="color" defaultValue={data?.colorScheme}>
-//   <SelectTrigger className="w-full">
-//     <SelectValue placeholder="Select a color"/>
-//       </SelectTrigger>
-//       <SelectContent>
-//         <SelectGroup>
-//           <SelectLabel>Color</SelectLabel>
-//     <SelectItem value="theme-green">Green</SelectItem>
-//     <SelectItem value="theme-Blue">Blue</SelectItem>
-//     <SelectItem value="theme-Voilet">Voilet</SelectItem>
-//     <SelectItem value="theme-Orange">Orange</SelectItem>
-//     <SelectItem value="theme-Yellow">Yellow</SelectItem>
-//     <SelectItem value="theme-Red">Red</SelectItem>
-//     <SelectItem value="theme-Rose">Rose</SelectItem>
-//         </SelectGroup>
-//       </SelectContent>
-// </Select>
-//    </div>
-//             </div>
-//           </CardContent>
-//         </form>
-//       </Card>
-//     </div>
-//   );
-// };
 
-// export default page;
 " use client ";
-import { SubmitButton } from "@/NotesCart/app/components/Submitbutton";
-import prisma from "@/NotesCart/app/lib/db";
-import { Button } from "@/NotesCart/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/NotesCart/components/ui/card";
-import { Input } from "@/NotesCart/components/ui/input";
-import { Label } from "@/NotesCart/components/ui/label";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/NotesCart/components/ui/select";
+import { SubmitButton } from "@/app/components/Submitbutton";
+import prisma from "@/app/lib/db";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { revalidatePath } from "next/cache";
 import React from "react";

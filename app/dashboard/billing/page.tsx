@@ -1,13 +1,13 @@
 " use client ";
-import { Button } from "@/NotesCart/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/NotesCart/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, Loader2 } from "lucide-react";
 import React from "react";
-import prisma from "@/NotesCart/app/lib/db";
-import { Select } from "@/NotesCart/components/ui/select";
+import prisma from "@/app/lib/db";
+import { Select } from "@/components/ui/select";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { error } from "console";
-import { getStripeSession, stripe } from "@/NotesCart/app/lib/stripe";
+import { getStripeSession, stripe } from "@/app/lib/stripe";
 import { redirect } from "next/navigation";
 import { useFormStatus } from "react-dom";
 

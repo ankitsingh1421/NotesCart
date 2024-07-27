@@ -1,6 +1,6 @@
-import prisma from '@/NotesCart/app/lib/db';
-import { Button } from '@/NotesCart/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/NotesCart/components/ui/card';
+import prisma from '@/app/lib/db';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import Link from 'next/link';
 import React from 'react';

@@ -1,5 +1,5 @@
-import { Button } from '@/NotesCart/components/ui/button'
-import { Card } from '@/NotesCart/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Card } from '@/components/ui/card'
 import { XIcon } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'

@@ -1,10 +1,10 @@
-import { SubmitButton } from "@/NotesCart/app/components/Submitbutton";
-import prisma from "@/NotesCart/app/lib/db";
-import { Button } from "@/NotesCart/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/NotesCart/components/ui/card";
-import { Input } from "@/NotesCart/components/ui/input";
-import { Label } from "@/NotesCart/components/ui/label";
-import { Textarea } from "@/NotesCart/components/ui/textarea";
+import { SubmitButton } from "@/app/components/Submitbutton";
+import prisma from "@/app/lib/db";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
